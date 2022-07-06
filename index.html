@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="display">
+        <div class="valor-superior"> </div>
+        <div class="valor-inferior"> </div>
+      </div>
+
+      <input type="button" value="DEL" id="buttonDel"  class="operations" data-delete/>
+      <input type="button" value="C" id="buttonClear" class="operations" data-clear />
+      <input type="button" value="%" id="buttonRes" class="operations" data-operations/>
+      <input type="button" value="+" id="buttonSuma" class="operations" data-operations/>
+
+      <input type="button" value="7" id="button7" class="numbers" data-numero />
+      <input type="button" value="8" id="button8" class="numbers" data-numero />
+      <input type="button" value="9" id="button9" class="numbers" data-numero />
+      <input type="button" value="-" id="buttonResta" class="operations" data-operations/>
+
+      <input type="button" value="4" id="button4" class="numbers" data-numero />
+      <input type="button" value="5" id="button5" class="numbers" data-numero />
+      <input type="button" value="6" id="button6" class="numbers" data-numero />
+      <input type="button" value="*" id="buttonMult" class="operations" data-operations/>
+
+      <input type="button" value="1" id="button1" class="numbers" data-numero />
+      <input type="button" value="2" id="button2" class="numbers" data-numero />
+      <input type="button" value="3" id="button3" class="numbers" data-numero />
+      <input type="button" value="/" id="buttonDiv" class="operations" data-operations/>
+
+      <input type="button" value="0" id="button0" class="numbers" data-numero />
+      <input type="button" value="." id="buttonDot" class="numbers" data-numero />
+
+      <input type="button" value="=" id="buttonEq" class="operations" data-equal/>
+    
+      <script src="app.js"></script>
+    </div>
+  </body>
+</html>

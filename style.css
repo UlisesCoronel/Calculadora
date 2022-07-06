@@ -1,0 +1,78 @@
+:root {
+  --white: #f8f9fa;
+  --primary: #19acb5;
+  --secondary: #f52c29;
+  --grey: #ced0d3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Commissioner", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/img/leaves-g3f635be48_1920.png);
+}
+
+.container {
+  margin: 2rem auto;
+  display: grid;
+  width: 348px;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: repeat(6, 80px);
+  padding: 0.7rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px #000;
+  border: 1px solid #f8f9fa40;
+  backdrop-filter: blur(15px);
+}
+
+#buttonEq{
+  grid-column: 3/5;
+}
+
+.display {
+  background-color: var(--white);
+  box-sizing: border-box;
+  grid-column: 1/5;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1.7rem;
+  position: relative;
+  text-align: end;
+}
+
+.valor-superior{
+  font-size: 1.2rem;
+}
+
+.container input {
+  margin: 0.3rem;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.container input:hover{
+  filter: brightness(90%);
+}
+
+.numbers{
+  background-color: var(--white);
+}
+.operations {
+  background-color: orange;
+}
+
+#buttonDel {
+  background-color: #f52c29;
+}
+
+#buttonClear {
+  background-color: green;
+}
